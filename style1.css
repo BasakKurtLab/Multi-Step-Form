@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI";
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(247, 235, 235);
+}
+#container {
+  width: 800px;
+  background-color: white;
+  padding: 50px;
+}
+#formAll {
+  display: flex;
+  margin-top: 40px;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+#bar {
+  display: flex;
+  height: 300px;
+}
+#formName {
+  margin-right: 30px;
+  align-items: flex-end;
+}
+#formName,
+#icon,
+#linie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#linie {
+  border: 1px solid rgb(216, 212, 212);
+}
+#icon {
+  position: relative;
+  left: -15px;
+  z-index: 1;
+  color: gray;
+}
+#icon .kreis {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border: 1px solid rgb(115, 46, 165);
+  border-radius: 50%;
+  color: rgb(115, 46, 165);
+  font-size: 0.6em;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aktiv {
+  color: white;
+  background-color: #732ea5;
+}
+.form {
+  align-self: center;
+  margin-left: 80px;
+  flex-grow: 1;
+  text-align: left;
+  display: none;
+}
+.form > *:not(h3) {
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  margin: 5px 0;
+  border: 1px solid rgb(224, 219, 219);
+  border-radius: 5px;
+}
+.form > input:focus {
+  border-bottom: 1px solid rgb(115, 46, 165);
+}
+.form > input {
+  color: rgb(115, 46, 165);
+  font-weight: bold;
+}
+#buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#buttons > button {
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  width: 80px;
+  background-color: rgb(115, 46, 165);
+  color: white;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #a750e6;
+  box-shadow: 1px 1px 11px 4px rgba(38, 38, 38, 0.9);
+}
+.fal {
+  color: rgb(44, 187, 44);
+  font-weight: bold;
+  
+}
+#gesendet {
+  color: green;
+  font-weight: bold;
+  display: none;
+  align-self: center;
+  margin: 0 auto;
+}
+#gesendet > i {
+  font-size: 3em;
+}
+#pre {
+  opacity: 0;
+}

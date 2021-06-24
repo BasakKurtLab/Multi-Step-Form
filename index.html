@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Create Your Account</h2>
+        
+        <div id="formAll">
+            <div id="bar">
+                <div id="formName">
+                    <span>Account Info</span>
+                    <span>Educational Profil</span>
+                    <span>Personel Details</span>
+                </div>
+                <div id="linie">
+
+                </div>
+                <div id="icon">
+                    <div class="kreis">1</div>
+                    <div class="kreis">2</div>
+                    <div class="kreis">3</div>
+                   
+                   
+                </div>
+
+            </div>
+            <div id="gesendet"><i class="fas fa-check-circle"></i><h2>Send Successfully</h2></div>
+            <div class="form" style="display: block;">
+                <h3>Account Info</h3>
+                Name:<br>
+                <input type="text" id="email" placeholder="E-mail"><br>
+                Password:<br>
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+
+            <div class="form">
+                <h3>Educational Profil</h3>
+                Education:<br>
+                <select id="edu">
+                    <option>Select</option>
+                    <option value="master">Master</option>
+                    <option value="uni">University</option>
+                    <option value="high">Highschool</option>
+                </select><br>
+                Year:<br>
+                <input type="text" id="year" placeholder="Year"><br>
+                Country:<br>
+                <input type="text" id="country" placeholder="Country">
+
+            </div>
+
+            <div class="form">
+                <h3>Personel Details</h3>
+                First Name:<br>
+                <input type="text" id="fname" placeholder="First Name"><br>
+                Last Name:<br>
+                <input type="text" id="lname" placeholder="Last Name"><br>
+                Address:<br>
+                <input type="text" name="adress" placeholder="Address">
+                
+            </div>
+
+           
+        </div>
+        
+        <div id="buttons">
+            <button id="pre" onclick="navi(-1)">Previous</button>
+            <button id="next" onclick="navi(1)">Next</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
